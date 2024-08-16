@@ -1,0 +1,515 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(45, 45, 42);
+}
+.head {
+    position: fixed;
+    background-color: rgb(18, 18, 19);
+    width:100%;
+    height:50px;
+    color:white;
+    font:center;
+    align-items: center;
+    padding:10px;
+    z-index: 3;
+}
+.container .elements{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32, 31, 31);
+    flex-direction: row;
+    padding: 10px;
+    padding-top: 60px;
+    position: fixed;
+    z-index: 2;
+}
+.container .elements .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.container .elements .logo img{
+    height:50px;
+}
+.container .elements .logo h2{
+    color:white;
+}
+.container .elements .nav-bar nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.container .elements .nav-bar nav a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.7rem;
+}
+.container .elements .nav-bar nav a:hover{
+    color:yellow;
+}
+.container .elements .search-box{
+    /* margin-right: 50px; */
+}
+.container .elements .search-box input{
+    height:30px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.container .elements .search-box input:focus{
+    background-color: #efe167;
+}
+.container .elements .search-box button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    font-size: medium;
+    font-weight:bold;
+    font-family: 'Times New Roman';
+    cursor: pointer;
+}
+.container .elements .search-box button:focus{
+    background-color: #e7eb73;
+}
+.video{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.video video{
+    width:100%;
+    height: 100%    ;
+    position: relative;
+    opacity: 0.8;
+}
+.video .outer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top:35%;
+    bottom: 35%;
+    left:20%;
+    right:25%;
+    color: rgb(255, 255, 255);
+    /* background-color: #efe167; */
+    margin-left: 100px;
+
+}
+.video .outer h1{
+    /* color:rgba(120, 48, 48, 0); */
+    font-size: 75px;
+    margin-right: 70px;
+    justify-content: center;
+}
+.video .outer p{
+    font-size: 30px;
+    margin-top: 40px;;
+}
+.video .outer button{
+    margin-top: 50px;
+    font-size:25px ;
+    width:300px;
+    padding: 5px;
+    margin-left: 50px;
+    border-radius:100px;
+    font-weight: bold;
+}
+.video .outer button:hover{
+    background-color:yellow;
+    transition: 0.3s;
+}
+.video .outer .inner h1{
+    text-align: center;
+    font-size:  3rem;
+    font-weight: 900;
+    /*margin-left: 60px;*/
+}
+.container2{
+    background-color: rgb(49, 50, 49);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.container2 .cards{
+    height:300px;
+    width:1100px;
+    background-color: rgb(33, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.container2 .cards .cards1{
+    padding: 30px;
+    width:650px;
+    height:230px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .cards  h3{
+    text-align: center;
+
+}
+.container2 .cards  p{
+    text-align: center;
+}
+.container2 .cards .cards1 h3{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.container2 .cards .cards2{
+    padding:30px;
+    color:white;
+    width:650px;
+    height:230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .cards .cards2 h3{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.container2 .cards .cards3{
+    padding:30px;
+    width:650px;
+    height:230px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .cards .cards3 h3{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.container3{
+    margin-top: 50px;
+    background-color: rgb(49, 50, 49);
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.container3 .box1 img{
+    /* display flex; */
+    height: 600px;
+}
+.container3 .box2{
+    width:40%;
+    padding-top: 150px;
+}
+.container3 .box2 h1{
+    /* justify-content: center; */
+    /* text-align: center; */
+    color: white;
+    /* display: flex; */
+    font-size: 50px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid yellow;
+    
+}
+.container3 .box2 p{
+    color: white;
+    /* display: flex;
+    align-items: center; */
+    font-size: 20px;
+    margin-top: 30px;
+}
+.container3 .box2 button{
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 30px;
+    background-color: rgb(49, 50, 49);
+    color: white;
+    font-weight:bold;
+    border-color: white;
+}
+.container3 .box2 button:hover{
+    background-color: yellow;
+    transition: 0.2s;
+    color:black;
+    font-weight: bold;
+}
+.container4{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(45, 45, 42);
+}
+.container4 .card h1{
+    padding-top: 30px;
+    color: white;
+    padding-bottom: 30px;
+    font-size: 50px;
+    width:550px;
+}
+.container4 .card h2{
+    padding-top: 50px;
+    color: yellow;
+
+}
+.container5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(45, 45, 42);
+}    
+.container5 .cardbox {
+    background-color: rgb(45, 45, 42);
+    height:950px;
+    width:1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(182, 176, 176);
+
+}
+.container5 .cardbox .card1{
+    
+    height: 450px;
+    width: 300px;
+    background-color: rgb(28, 28, 27);
+    padding: 15px;
+    padding-left: 10px;
+
+}
+.container5 .cardbox h2{
+    padding-bottom: 20px;
+    color: white;
+}
+.container5 .cardbox p{
+    display: flex;
+    justify-content:left;
+    text-align:left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.container5 .cardbox h4{
+    display: flex;
+    justify-content:left;
+    text-align:left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.container5 .cardbox button{
+    border-radius:100px;
+    width:150px;
+    height:40px;
+    padding:10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(28, 28, 27);
+    border-color:white;
+}
+.container5 .cardbox .c1{
+    display: flex;
+    justify-content:left;
+    text-align:left;
+    padding-bottom: 40px;
+}
+.container5 .cardbox button:hover{
+    background-color: yellow;
+    transition: 0.2s;
+    color: black;
+    font-weight: bold;
+}
+.container5  .cardbox .card2{
+    width:300px;
+    height:450px;
+    background-color:rgb(28, 28, 27);
+    padding: 15px;
+}
+.container5  .cardbox .card3{
+    width:300px;
+    height:450px;
+    background-color:rgb(28, 28, 27);
+    padding: 15px;
+}
+
+.container5 .cardbox .card4{
+    width: 300px;
+    height:450px;
+    background-color: rgb(28, 28, 27);
+    padding: 15px;
+}
+.container5 .cardbox .card5{
+    width:300px;
+    height:450px;
+    background-color: rgb(28, 28, 27);
+    padding: 15px;
+}
+.container5 .cardbox .card6{
+    width:300px;
+    height:450px;
+    background-color: rgb(28, 28, 27);
+    padding: 15px;
+}
+.container6 {
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    /* height: 100%; */
+    position: relative;
+    /* opacity: 0.2; */
+    margin-top: 50px;
+    background-color: black;
+}
+.container6 .backimage{
+    opacity:0.4;
+    /* background-color: rgba(0,0,0); */
+}
+.container6 .outer1{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 550px;
+    position: absolute;
+    top:80px;
+    margin-left: 450px;
+    padding: 20px;
+    text-align: center;
+}
+.container6 .outer1 .inner1 h1{
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.container6 .outer1 .inner1 p{
+   font-size: 28px;
+   color:rgb(255, 255, 255);
+   /* font-weight: bolder; */
+   padding-bottom: 30px; 
+}
+.container6 .outer1 .inner1 button{
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 40px;
+    color: black;
+    font-weight: bold;
+    border-color:black;  
+}
+.container6 .outer1 .inner1 button:hover{
+    background-color: yellow;
+    font-weight: bold;
+    
+}
+.container7{
+    position: absolute;
+    /* background-color: blue; */
+    bottom: 0px;
+    width: 100%;
+    top:350px;
+    display: flex;
+    border-top: 3px solid yellow;
+    padding-top: 40px;
+    font-weight: bold;
+    color: white;
+   justify-content: center;
+   
+}
+.container7 p{
+    margin-left: 20px;
+}
+.container8{
+    position: absolute;
+    /* background-color: blue; */
+    bottom: 0px;
+    width: 100%;
+    top:350px;
+    display: flex;
+    border-top: 3px solid yellow;
+    padding-top: 130px;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+}
+.container9{
+    display: flex; 
+    margin-top: 50px;  
+    width: 100%;
+    background-color: rgb(45, 45, 42);
+}
+.container9 .lastpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height:300px;
+    padding: 10px;
+    color: white;
+    /* background-color: #e7eb73; */
+}
+.container9 .lastpage p{
+    margin-left: 40px;
+}
+.container9 .lastpage img{
+    transform: translate(100%);
+}
+.container9 .icon{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    /* background-color: #242420; */
+}
+.container9 .address-contact{
+    /* background-color: aqua; */
+    width: 600px;
+    height: 450px;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-left:250px ;
+    color: white;
+}
+.container9 .address-contact  h2{
+    margin-top: 20px;
+}
+.container9 .address-contact h2:hover{
+    color: #f6ff00;
+}
+.container9 .address-contact p:hover{
+    color: #f6ff00;
+}
+.container9 .explore{
+    /* background-color: aquamarine; */
+    width: 500px;
+    height: 450px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.container9 .explore h2{
+    margin-bottom: 25px;
+}
+.container9 .explore p{
+    margin-bottom: 7px;
+} 
+.container9 .explore h2:hover{
+   color: #f6ff00;
+}
+.container9 .explore p:hover{
+    color: #f6ff00;
+}
